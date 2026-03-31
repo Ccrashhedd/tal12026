@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>Tiendecita</title>
+</head>
+<body>
+    <header class="header">
+        <div class="headCont">
+            <div id="titulo">
+                <img src="img/logo.png" alt="Logo" class="logo">
+                <h1>Tiendecita</h1>
+                <p>La de tus sueños mi amor</p>
+                
+            </div>
+            <div id="acciones">
+                <button id="adminBtn" class="btn btn-outline-primary">Admin</button>
+                <button id="homeBtn" class="btn btn-outline-secibdary">Home</button>
+            </div>
+            <script>
+                document.getElementById('adminBtn').addEventListener('click', function() {
+                    window.location.href = 'admin.html';
+                });
+
+                document.getElementById('homeBtn').addEventListener('click', function() {
+                    window.location.href = 'index.html';
+                });
+            </script>
+        </div>
+
+    </header>
+    
+    <main class="main">
+        <div class="mainCont">
+
+            <section id="catalogoContainer">
+                <div>
+
+                    <div id="catalogo">
+                        <div>
+                            <h2>Catálogo de productos</h2>
+                            <input type="text" id="searchInput" placeholder="Buscar producto...">
+                            <button id="buscarbtn">Buscar</button>
+                        </div>
+
+                        <table>
+                            <thead>
+                                <!--Espacio por cualquier cosa-->
+                            </thead>
+
+                            <tbody>
+
+                            </tbody>
+
+                            <tfoot>
+
+                            </tfoot>
+                        </table>
+
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footCont">
+                <p>&copy; 2024 Tiendecita. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
