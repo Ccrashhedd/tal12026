@@ -1,5 +1,6 @@
-CREATE DATABASE ecommerce;
-USE ecommerse;  
+
+CREATE DATABASE IF NOT EXISTS ecommerce;
+USE ecommerce;  
 
 CREATE TABLE PRODUCTO (
     idProducto BIGINT PRIMARY KEY,
