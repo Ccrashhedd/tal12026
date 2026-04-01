@@ -74,7 +74,7 @@
 
         async function cargarProductos() {
             try {
-                const respuesta = await fetch("conexion.php?accion=listar");
+                const respuesta = await fetch("../BACKEND/PHP/conexion.php?accion=listar");
                 const data = await respuesta.json();
 
                 if (!Array.isArray(data)) {
